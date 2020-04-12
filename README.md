@@ -11,7 +11,7 @@ shellder
 
 Fork
 --------
-This forked version provides the exit code number when not 0.
+This forked version provides the exit code number when not 0, some fixes and color changed.
 
 &nbsp;
 
