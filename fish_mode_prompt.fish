@@ -7,9 +7,9 @@ function fish_mode_prompt
             case insert
                 prompt_segment green black "I"
             case replace
-                prompt_segment red black "R"
+                prompt_segment red white "R"
             case replace_one
-                prompt_segment red black "r"
+                prompt_segment red white "r"
             case visual
                 prompt_segment magenta black "V"
         end
