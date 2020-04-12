@@ -9,6 +9,12 @@ shellder
 
 ![screenshot image of shellder](https://raw.githubusercontent.com/simnalamburt/i/master/shellder/screenshot.png)
 
+Fork
+--------
+This forked version provides the exit code number when not 0.
+
+&nbsp;
+
 Installation
 --------
 You can install shellder via various plugin managers.
