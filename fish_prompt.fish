@@ -113,7 +113,7 @@ end
 
 
 function prompt_dir -d "Display the current directory"
-  prompt_segment 1C1C1C FFFFFF (prompt_pwd)
+  prompt_segment 404040 FFFFFF (prompt_pwd)
 end
 
 
@@ -222,7 +222,7 @@ end
 
 function prompt_status -d "the symbols for a non zero exit status, root and background jobs"
     if [ $RETVAL -ne 0 ]
-      prompt_segment black red $RETVAL
+      prompt_segment white red $RETVAL
     end
 
     # if superuser (uid == 0)
