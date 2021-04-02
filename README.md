@@ -1,58 +1,24 @@
 <img align=left width=175px height=175px
 src="https://raw.githubusercontent.com/simnalamburt/i/master/shellder/shellder.png">
 
-shellder
-========
-1. **No solarized** ― xterm256 colors are beautiful enough
-2. **zsh** + **fish** support
-3. **Speed** ― Carefully optimized for slow environments like MSYS2
+# shellder
 
-![screenshot image of shellder](https://raw.githubusercontent.com/simnalamburt/i/master/shellder/screenshot.png)
+## Fork
 
-Fork
---------
 This forked version provides the exit code number when not 0, some fixes and color changed.
 
 &nbsp;
 
-Installation
---------
-You can install shellder via various plugin managers.
+## Installation
 
-### Zsh, [zinit]
-```zsh
-# ~/.zshrc
-zinit light simnalamburt/shellder
+You can install shellder via your favorite plugin manager, for example, with [fisher](https://github.com/jorgebucaran/fisher):
+
+```shell
+$ fisher install theedoran/shellder
 ```
-
-### Fish, [chips]
-```yaml
-# ~/.config/chips/plugin.yaml
-github:
-- simnalamburt/shellder
-```
-
-### Fish, [oh-my-fish]
-```yaml
-# ~/.config/chips/plugin.yaml
-github:
-- simnalamburt/shellder
-```
-
-&nbsp;
-
-Configuration
--------
-You can turn off Fish-like path shrinking by adding the following to your `~/.zshrc`:
-
-```zsh
-# ~/.zshrc
-export SHELLDER_KEEP_PATH=1
-```
-
-&nbsp;
 
 ## Fonts
+
 You'll need a powerline patched font. If you don't have one, download one or
 patch some fonts on you own.
 
@@ -61,13 +27,16 @@ patch some fonts on you own.
 
 &nbsp;
 
---------
-*shellder* is primarily distributed under the terms of both the [MIT license]
+---
+
+_shellder_ is primarily distributed under the terms of both the [MIT license]
 and the [Apache License (Version 2.0)]. See [COPYRIGHT] for details.
+
+_The author of the original theme is [simnalamburt](https://github.com/simnalamburt). You can find the theme [here](https://github.com/simnalamburt/shellder)._
 
 [zinit]: https://github.com/zdharma/zinit
 [chips]: https://github.com/xtendo-org/chips
 [oh-my-fish]: https://github.com/oh-my-fish/oh-my-fish
-[MIT license]: LICENSE-MIT
-[Apache License (Version 2.0)]: LICENSE-APACHE
-[COPYRIGHT]: COPYRIGHT
+[mit license]: LICENSE-MIT
+[apache license (version 2.0)]: LICENSE-APACHE
+[copyright]: COPYRIGHT
