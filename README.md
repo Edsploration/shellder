@@ -14,7 +14,7 @@ This forked version provides a simpler codebase, the exit code number when not 0
 You can install shellder via your favorite plugin manager, for example, with [fisher](https://github.com/jorgebucaran/fisher):
 
 ```shell
-$ fisher install TheEdoRan/shellder
+fisher install TheEdoRan/shellder
 ```
 
 ## Fonts
