@@ -1,52 +1,5 @@
-#
-# Segments functions
-#
-set -g current_bg NONE
-set -g segment_separator \uE0B0
+source (dirname (status -f))/shellder_segments.fish
 
-function prompt_segment -d "Function to draw a segment"
-	set -l bg
-	set -l fg
-	if [ -n "$argv[1]" ]
-		set bg $argv[1]
-	else
-		set bg normal
-	end
-	if [ -n "$argv[2]" ]
-		set fg $argv[2]
-	else
-		set fg normal
-	end
-	if [ "$current_bg" != 'NONE' -a "$argv[1]" != "$current_bg" ]
-		set_color -b $bg
-		set_color $current_bg
-		echo -n "$segment_separator "
-		set_color -b $bg
-		set_color $fg
-	else
-		set_color -b $bg
-		set_color $fg
-		echo -n " "
-	end
-	set current_bg $argv[1]
-	if [ -n "$argv[3]" ]
-		echo -n -s $argv[3] " "
-	end
-end
-
-function prompt_finish -d "Close open segments"
-	if [ -n $current_bg ]
-		set_color -b normal
-		set_color $current_bg
-		echo -n "$segment_separator "
-	end
-	set_color normal
-	set -g current_bg NONE
-end
-
-#
-# Components
-#
 function prompt_virtual_env -d "Display Python virtual environment"
 	if test "$VIRTUAL_ENV"
 		prompt_segment white black (basename $VIRTUAL_ENV)
@@ -128,9 +81,7 @@ function prompt_status -d "The symbols for a non zero exit status, root and back
 		end
 end
 
-#
-# Prompt
-#
+# Set the prompt
 function fish_prompt
 	set -g RETVAL $status
 	prompt_status
