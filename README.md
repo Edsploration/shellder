@@ -3,13 +3,11 @@ src="https://raw.githubusercontent.com/simnalamburt/i/master/shellder/shellder.p
 
 # shellder
 
-<br><br><br><br><br>
+<br><br><br><br>
 
-## Fork
+## Fork - fish only!
 
 This forked version provides a simpler codebase, the exit code number when not 0, some fixes and color changed.
-
-&nbsp;
 
 ## Installation
 
@@ -26,8 +24,6 @@ patch some fonts on you own.
 
 - https://github.com/powerline/fonts
 - https://github.com/ryanoasis/nerd-fonts
-
-&nbsp;
 
 ---
 
