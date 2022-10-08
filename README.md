@@ -7,14 +7,14 @@ src="https://raw.githubusercontent.com/simnalamburt/i/master/shellder/shellder.p
 
 ## Fork - fish only!
 
-This forked version provides a simpler codebase, the exit code number when not 0, some fixes and color changed.
+This forked version provides a simpler codebase and some fixes. Forked again for personal tweaks.
 
 ## Installation
 
 You can install shellder via your favorite plugin manager, for example, with [fisher](https://github.com/jorgebucaran/fisher):
 
 ```shell
-fisher install TheEdoRan/shellder
+fisher install Edsploration/shellder
 ```
 
 ## Fonts
@@ -31,6 +31,7 @@ _shellder_ is primarily distributed under the terms of both the [MIT license]
 and the [Apache License (Version 2.0)]. See [COPYRIGHT] for details.
 
 _The author of the original theme is [simnalamburt](https://github.com/simnalamburt). You can find the theme [here](https://github.com/simnalamburt/shellder)._
+_The author of the intermediate fork is [TheEdoRan](https://github.com/simnalamburt). You can find their version [here](https://github.com/TheEdoRan/shellder)._
 
 [zinit]: https://github.com/zdharma/zinit
 [chips]: https://github.com/xtendo-org/chips
