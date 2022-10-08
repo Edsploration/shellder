@@ -7,7 +7,7 @@ function prompt_virtual_env -d "Display Python virtual environment"
 end
 
 function prompt_dir -d "Display the current directory"
-	prompt_segment 404040 FFFFFF (prompt_pwd)
+	prompt_segment 1C1C1C FFFFFF (prompt_pwd)
 end
 
 function prompt_git -d "Display the current git state"
@@ -66,7 +66,7 @@ end
 
 function prompt_status -d "The symbols for a non zero exit status, root and background jobs"
 		if [ $RETVAL -ne 0 ]
-			prompt_segment white red $RETVAL
+			prompt_segment black red $RETVAL
 		end
 
 		# if superuser (uid == 0)
