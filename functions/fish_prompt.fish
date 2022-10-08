@@ -6,6 +6,36 @@ function prompt_virtual_env -d "Display Python virtual environment"
 	end
 end
 
+function prompt_user -d "Display current user if different from $default_user"
+	set -l BG 444444
+	set -l FG BCBCBC
+
+	if [ "$theme_display_user" = "yes" ]
+		if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
+			set USER (whoami)
+			get_hostname
+			if [ $HOSTNAME_PROMPT ]
+				set USER_PROMPT $USER@$HOSTNAME_PROMPT
+			else
+				set USER_PROMPT $USER
+			end
+			prompt_segment $BG $FG $USER_PROMPT
+		end
+	else
+		get_hostname
+		if [ $HOSTNAME_PROMPT ]
+			prompt_segment $BG $FG $HOSTNAME_PROMPT
+		end
+	end
+end
+
+function get_hostname -d "Set current hostname to prompt variable $HOSTNAME_PROMPT if connected via SSH"
+	set -g HOSTNAME_PROMPT ""
+	if [ "$theme_hostname" = "always" -o \( "$theme_hostname" != "never" -a -n "$SSH_CLIENT" \) ]
+		set -g HOSTNAME_PROMPT (hostname)
+	end
+end
+
 function prompt_dir -d "Display the current directory"
 	prompt_segment 1C1C1C FFFFFF (prompt_pwd)
 end
@@ -86,6 +116,7 @@ function fish_prompt
 	set -g RETVAL $status
 	prompt_status
 	prompt_virtual_env
+	prompt_user
 	prompt_dir
 	command -v git &>/dev/null; and prompt_git
 	prompt_finish
