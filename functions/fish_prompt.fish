@@ -37,7 +37,7 @@ function get_hostname -d "Set current hostname to prompt variable $HOSTNAME_PROM
 end
 
 function prompt_dir -d "Display the current directory"
-	prompt_segment 1C1C1C FFFFFF (prompt_pwd)
+	prompt_segment 1C1C1C FFFFFF (pwd)
 end
 
 function prompt_git -d "Display the current git state"
