@@ -1,13 +1,13 @@
 <img align=left width=175px height=175px
 src="https://raw.githubusercontent.com/simnalamburt/i/master/shellder/shellder.png">
 
-# shellder
+# shellder (fork of a fork)
 
-<br><br><br><br>
+- This forked version provides a simpler codebase with minor fixes and changes.
+- Supports **fish** only, not **zsh**.
+- The directory path is printed in alternating colors.
 
-## Fork - fish only!
-
-This forked version provides a simpler codebase and some fixes. Forked again for personal tweaks.
+![screenshot of this version of shellder](https://github.com/Edsploration/i/blob/main/shellder/example.png)
 
 ## Installation
 
@@ -30,7 +30,7 @@ patch some fonts on you own.
 _shellder_ is primarily distributed under the terms of both the [MIT license]
 and the [Apache License (Version 2.0)]. See [COPYRIGHT] for details.
 
-_The author of the original theme is [simnalamburt](https://github.com/simnalamburt). You can find the theme [here](https://github.com/simnalamburt/shellder)._
+_The author of the original theme is [simnalamburt](https://github.com/simnalamburt). You can find the theme [here](https://github.com/simnalamburt/shellder)._<br>
 _The author of the intermediate fork is [TheEdoRan](https://github.com/simnalamburt). You can find their version [here](https://github.com/TheEdoRan/shellder)._
 
 [zinit]: https://github.com/zdharma/zinit
